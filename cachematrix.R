@@ -40,7 +40,7 @@ cacheSolve <- function(x, ...) {
   }
   #compute the matrix
   data <- x$get() 
-  i <- solve(data, ...) %*% data
+  i <- solve(data, ...)
   #set the inverse to the object 
   x$setinverse(i)
   #return the matrix
